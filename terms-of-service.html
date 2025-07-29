@@ -1,0 +1,506 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Terms of Service - Keto Meal Planner</title>
+    <meta name="description" content="Terms of Service for Keto Meal Planner - Legal terms and conditions for using our app and services.">
+    
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    
+    <style>
+        :root {
+            --primary-green: #006400;
+            --accent-green: #32CD32;
+            --dark-background: #0F0F23;
+            --light-background: #F5F5F5;
+            --text-primary: #333333;
+            --text-secondary: #666666;
+            --border-radius: 16px;
+            --shadow: 0 10px 30px rgba(0, 100, 0, 0.1);
+        }
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+            line-height: 1.6;
+            color: var(--text-primary);
+            background: linear-gradient(135deg, #f5f7fa 0%, #c3cfe2 100%);
+            min-height: 100vh;
+        }
+
+        .container {
+            max-width: 800px;
+            margin: 0 auto;
+            padding: 0 20px;
+        }
+
+        /* Header */
+        header {
+            background: rgba(255, 255, 255, 0.95);
+            backdrop-filter: blur(10px);
+            position: sticky;
+            top: 0;
+            z-index: 100;
+            box-shadow: 0 2px 20px rgba(0, 0, 0, 0.1);
+        }
+
+        nav {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 1rem 0;
+            max-width: 1200px;
+            margin: 0 auto;
+            padding-left: 20px;
+            padding-right: 20px;
+        }
+
+        .logo {
+            display: flex;
+            align-items: center;
+            gap: 12px;
+            font-size: 1.5rem;
+            font-weight: 700;
+            color: var(--primary-green);
+            text-decoration: none;
+        }
+
+        .logo::before {
+            content: "🥑";
+            font-size: 2rem;
+        }
+
+        .nav-links {
+            display: flex;
+            list-style: none;
+            gap: 2rem;
+        }
+
+        .nav-links a {
+            text-decoration: none;
+            color: var(--text-primary);
+            font-weight: 500;
+            transition: color 0.3s ease;
+        }
+
+        .nav-links a:hover {
+            color: var(--primary-green);
+        }
+
+        /* Main Content */
+        main {
+            background: white;
+            margin: 2rem auto;
+            border-radius: var(--border-radius);
+            box-shadow: var(--shadow);
+            overflow: hidden;
+        }
+
+        .page-header {
+            background: linear-gradient(135deg, var(--primary-green), var(--accent-green));
+            color: white;
+            padding: 3rem 0;
+            text-align: center;
+        }
+
+        .page-header h1 {
+            font-size: 2.5rem;
+            font-weight: 700;
+            margin-bottom: 1rem;
+        }
+
+        .page-header p {
+            font-size: 1.2rem;
+            opacity: 0.9;
+            max-width: 600px;
+            margin: 0 auto;
+        }
+
+        .content {
+            padding: 3rem;
+        }
+
+        .last-updated {
+            background: var(--light-background);
+            padding: 1rem 2rem;
+            border-radius: 12px;
+            margin-bottom: 2rem;
+            border-left: 4px solid var(--primary-green);
+        }
+
+        .last-updated strong {
+            color: var(--primary-green);
+        }
+
+        h2 {
+            font-size: 1.8rem;
+            font-weight: 600;
+            color: var(--primary-green);
+            margin: 2.5rem 0 1rem 0;
+            padding-bottom: 0.5rem;
+            border-bottom: 2px solid var(--accent-green);
+        }
+
+        h3 {
+            font-size: 1.3rem;
+            font-weight: 600;
+            color: var(--text-primary);
+            margin: 2rem 0 0.5rem 0;
+        }
+
+        p {
+            margin-bottom: 1rem;
+            color: var(--text-secondary);
+        }
+
+        ul, ol {
+            margin: 1rem 0 1rem 2rem;
+            color: var(--text-secondary);
+        }
+
+        li {
+            margin-bottom: 0.5rem;
+        }
+
+        .important-notice {
+            background: linear-gradient(135deg, rgba(255, 193, 7, 0.1), rgba(255, 193, 7, 0.05));
+            border: 1px solid rgba(255, 193, 7, 0.3);
+            border-radius: 12px;
+            padding: 1.5rem;
+            margin: 1.5rem 0;
+            border-left: 4px solid #ffc107;
+        }
+
+        .important-notice h4 {
+            color: #e65100;
+            margin-top: 0;
+            margin-bottom: 0.5rem;
+        }
+
+        .highlight-box {
+            background: linear-gradient(135deg, rgba(0, 100, 0, 0.05), rgba(50, 205, 50, 0.05));
+            border: 1px solid rgba(0, 100, 0, 0.2);
+            border-radius: 12px;
+            padding: 1.5rem;
+            margin: 1.5rem 0;
+        }
+
+        .contact-info {
+            background: var(--dark-background);
+            color: white;
+            padding: 2rem;
+            border-radius: 12px;
+            margin: 2rem 0;
+        }
+
+        .contact-info h3 {
+            color: var(--accent-green);
+            margin-top: 0;
+        }
+
+        .contact-info a {
+            color: var(--accent-green);
+            text-decoration: none;
+        }
+
+        .contact-info a:hover {
+            text-decoration: underline;
+        }
+
+        /* Footer */
+        footer {
+            background: var(--dark-background);
+            color: white;
+            padding: 2rem 0;
+            margin-top: 2rem;
+        }
+
+        .footer-content {
+            text-align: center;
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 0 20px;
+        }
+
+        .footer-links {
+            display: flex;
+            justify-content: center;
+            gap: 2rem;
+            margin-bottom: 1rem;
+            flex-wrap: wrap;
+        }
+
+        .footer-links a {
+            color: rgba(255, 255, 255, 0.8);
+            text-decoration: none;
+            transition: color 0.3s ease;
+        }
+
+        .footer-links a:hover {
+            color: var(--accent-green);
+        }
+
+        /* Responsive Design */
+        @media (max-width: 768px) {
+            .nav-links {
+                gap: 1rem;
+            }
+
+            .page-header h1 {
+                font-size: 2rem;
+            }
+
+            .content {
+                padding: 2rem 1.5rem;
+            }
+
+            h2 {
+                font-size: 1.5rem;
+            }
+
+            .footer-links {
+                flex-direction: column;
+                gap: 1rem;
+            }
+        }
+
+        @media (max-width: 480px) {
+            .container {
+                padding: 0 15px;
+            }
+
+            main {
+                margin: 1rem auto;
+            }
+
+            .page-header {
+                padding: 2rem 0;
+            }
+
+            .page-header h1 {
+                font-size: 1.8rem;
+            }
+
+            .content {
+                padding: 1.5rem 1rem;
+            }
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <nav>
+            <a href="index.html" class="logo">Keto Meal Planner</a>
+            <ul class="nav-links">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="index.html#features">Features</a></li>
+                <li><a href="privacy-policy.html">Privacy</a></li>
+                <li><a href="terms-of-service.html">Terms</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <div class="page-header">
+            <div class="container">
+                <h1>Terms of Service</h1>
+                <p>Legal terms and conditions governing your use of Keto Meal Planner.</p>
+            </div>
+        </div>
+
+        <div class="content">
+            <div class="last-updated">
+                <strong>Last Updated:</strong> January 29, 2025
+            </div>
+
+            <p>These Terms of Service ("Terms") govern your use of the Keto Meal Planner mobile application and related services (collectively, the "Service") provided by Keto Meal Planner ("we," "our," or "us").</p>
+
+            <div class="important-notice">
+                <h4>⚠️ Important Notice</h4>
+                <p>By downloading, installing, or using our Service, you agree to be bound by these Terms. If you do not agree to these Terms, do not use our Service.</p>
+            </div>
+
+            <h2>1. Acceptance of Terms</h2>
+            
+            <p>By accessing or using Keto Meal Planner, you agree to comply with and be bound by these Terms and our Privacy Policy. These Terms constitute a legally binding agreement between you and us.</p>
+
+            <h2>2. Description of Service</h2>
+            
+            <p>Keto Meal Planner is a mobile application that provides:</p>
+            <ul>
+                <li>Ketogenic meal planning tools and recipes</li>
+                <li>Nutrition tracking and analysis</li>
+                <li>Personalized dietary recommendations</li>
+                <li>Shopping list generation</li>
+                <li>Progress tracking and analytics</li>
+                <li>Premium subscription features</li>
+            </ul>
+
+            <h2>3. User Accounts</h2>
+            
+            <h3>Account Creation</h3>
+            <p>To use certain features of our Service, you must create an account. You agree to:</p>
+            <ul>
+                <li>Provide accurate, current, and complete information</li>
+                <li>Maintain and update your account information</li>
+                <li>Keep your login credentials secure</li>
+                <li>Be responsible for all activities under your account</li>
+                <li>Notify us immediately of any unauthorized use</li>
+            </ul>
+
+            <h3>Account Eligibility</h3>
+            <p>You must be at least 13 years old to create an account. If you are under 18, you must have parent or guardian consent to use our Service.</p>
+
+            <h2>4. Subscription and Payment Terms</h2>
+            
+            <h3>Premium Subscription</h3>
+            <p>We offer premium features through paid subscriptions. By purchasing a subscription, you agree to:</p>
+            <ul>
+                <li>Pay all applicable fees and taxes</li>
+                <li>Automatic renewal unless cancelled</li>
+                <li>Our refund policy as outlined in the App Store terms</li>
+            </ul>
+
+            <h3>Billing</h3>
+            <p>Subscription fees are billed through the Apple App Store. All billing disputes should be directed to Apple. We do not store your payment information.</p>
+
+            <h3>Cancellation</h3>
+            <p>You may cancel your subscription at any time through your App Store account settings. Cancellation takes effect at the end of your current billing period.</p>
+
+            <div class="highlight-box">
+                <strong>Free Trial:</strong> If you start a free trial, you can cancel anytime during the trial period without charge. If you don't cancel before the trial ends, you'll be automatically charged for the subscription.
+            </div>
+
+            <h2>5. Acceptable Use</h2>
+            
+            <p>You agree to use our Service only for lawful purposes and in accordance with these Terms. You agree NOT to:</p>
+            <ul>
+                <li>Violate any applicable laws or regulations</li>
+                <li>Infringe on intellectual property rights</li>
+                <li>Transmit harmful, offensive, or inappropriate content</li>
+                <li>Attempt to hack, disrupt, or compromise our systems</li>
+                <li>Use automated tools to access our Service</li>
+                <li>Impersonate others or provide false information</li>
+                <li>Share your account credentials with others</li>
+                <li>Use our Service for commercial purposes without permission</li>
+            </ul>
+
+            <h2>6. Content and Intellectual Property</h2>
+            
+            <h3>Our Content</h3>
+            <p>All content in our app, including recipes, meal plans, text, graphics, logos, and software, is owned by us or our licensors and protected by copyright and other intellectual property laws.</p>
+
+            <h3>User Content</h3>
+            <p>You may submit content such as reviews, notes, and preferences. By submitting content, you grant us a non-exclusive, royalty-free license to use, modify, and display such content in connection with our Service.</p>
+
+            <h3>Recipe Attribution</h3>
+            <p>Our recipes are sourced from various providers and public domains. We strive to provide accurate attribution where required.</p>
+
+            <h2>7. Health and Medical Disclaimers</h2>
+            
+            <div class="important-notice">
+                <h4>⚠️ Medical Disclaimer</h4>
+                <p>Keto Meal Planner is for informational purposes only and is not intended as medical advice. Always consult with a healthcare professional before starting any diet or making significant dietary changes.</p>
+            </div>
+
+            <p>You acknowledge that:</p>
+            <ul>
+                <li>Our Service is not a substitute for professional medical advice</li>
+                <li>We make no health claims or guarantees about our recommendations</li>
+                <li>You use our nutritional information at your own risk</li>
+                <li>Individual results may vary</li>
+                <li>You should consult healthcare providers for medical conditions</li>
+            </ul>
+
+            <h2>8. Privacy and Data Protection</h2>
+            
+            <p>Your privacy is important to us. Our collection and use of personal information is governed by our Privacy Policy, which is incorporated into these Terms by reference.</p>
+
+            <h2>9. Service Availability</h2>
+            
+            <p>We strive to provide continuous service availability, but we do not guarantee uninterrupted access. We may:</p>
+            <ul>
+                <li>Perform maintenance that temporarily limits access</li>
+                <li>Modify or discontinue features with notice</li>
+                <li>Experience technical difficulties beyond our control</li>
+            </ul>
+
+            <h2>10. Limitation of Liability</h2>
+            
+            <p>To the maximum extent permitted by law:</p>
+            <ul>
+                <li>Our total liability is limited to the amount you paid for our Service in the past 12 months</li>
+                <li>We are not liable for indirect, incidental, or consequential damages</li>
+                <li>We provide our Service "as is" without warranties</li>
+                <li>Some jurisdictions do not allow these limitations</li>
+            </ul>
+
+            <h2>11. Indemnification</h2>
+            
+            <p>You agree to indemnify and hold us harmless from any claims, damages, or expenses arising from your use of our Service or violation of these Terms.</p>
+
+            <h2>12. Termination</h2>
+            
+            <h3>By You</h3>
+            <p>You may stop using our Service and delete your account at any time.</p>
+
+            <h3>By Us</h3>
+            <p>We may suspend or terminate your access if you violate these Terms or for any other reason with reasonable notice.</p>
+
+            <h3>Effect of Termination</h3>
+            <p>Upon termination, your right to use our Service ends, but these Terms remain in effect for liability and other provisions.</p>
+
+            <h2>13. Changes to Terms</h2>
+            
+            <p>We may modify these Terms from time to time. We will notify you of material changes through the app or by email. Your continued use of our Service after changes constitutes acceptance of the updated Terms.</p>
+
+            <h2>14. Governing Law and Disputes</h2>
+            
+            <p>These Terms are governed by the laws of [Your Jurisdiction]. Any disputes will be resolved through binding arbitration or in the courts of [Your Jurisdiction].</p>
+
+            <h2>15. Apple App Store Terms</h2>
+            
+            <p>If you download our app from the Apple App Store, you also agree to Apple's Licensed Application End User License Agreement. In case of conflict, Apple's terms take precedence regarding your relationship with Apple.</p>
+
+            <h2>16. Contact Information</h2>
+            
+            <div class="contact-info">
+                <h3>Questions About These Terms?</h3>
+                <p>If you have questions about these Terms of Service, please contact us:</p>
+                <p>
+                    <strong>Email:</strong> <a href="mailto:legal@ketomealplanner.app">legal@ketomealplanner.app</a><br>
+                    <strong>Support:</strong> Available through the app's Help section
+                </p>
+                <p>We will respond to your inquiry within 30 days.</p>
+            </div>
+
+            <h2>17. Severability</h2>
+            
+            <p>If any provision of these Terms is found to be unenforceable, the remaining provisions will continue in full force and effect.</p>
+
+            <h2>18. Entire Agreement</h2>
+            
+            <p>These Terms, together with our Privacy Policy, constitute the entire agreement between you and us regarding your use of our Service.</p>
+        </div>
+    </main>
+
+    <footer>
+        <div class="footer-content">
+            <div class="footer-links">
+                <a href="index.html">Home</a>
+                <a href="terms-of-service.html">Terms of Service</a>
+                <a href="privacy-policy.html">Privacy Policy</a>
+            </div>
+            <p>&copy; 2025 Keto Meal Planner. All rights reserved.</p>
+        </div>
+    </footer>
+</body>
+</html>
